@@ -17,6 +17,11 @@
             android:layout_height="wrap_content"
             android:text="포스트 리스트 가져오기"/>
 
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(각각 첫번째와 마지막 포스트를 보여준다)"/>
+
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +48,12 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="각 포스트 가져오기"/>
+            android:text="GET QUERY 포스트 가져오기"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(각각 27번째와 41번째 포스트를 보여준다)"/>
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -63,5 +73,76 @@
                 android:layout_weight="1"
                 android:text="코루틴방식"/>
     </LinearLayout>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET PATH 포스트 가져오기"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(각각 63번째와 86번째 포스트를 보여준다)"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="기존방식"/>
+        <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="코루틴방식"/>
+    </LinearLayout>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <TextView
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CODE, ID, USERID"/>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"/>
+
+    <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BODY"/>
+
+    <TextView
+            android:id="@+id/text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
 </LinearLayout>

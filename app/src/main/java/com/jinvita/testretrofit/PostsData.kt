@@ -2,8 +2,8 @@ package com.jinvita.testretrofit
 
 import com.google.gson.annotations.SerializedName
 
-class TestData : ArrayList<TestData.TestDataItem>() {
-    data class TestDataItem(
+class PostsData : ArrayList<PostsData.PostDataItem>() {
+    data class PostDataItem(
         @SerializedName("body")
         val body: String,
         @SerializedName("id")

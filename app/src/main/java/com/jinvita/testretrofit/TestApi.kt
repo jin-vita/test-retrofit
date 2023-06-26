@@ -6,18 +6,28 @@ import retrofit2.http.*
 
 interface TestApi {
     @GET("posts")
-    fun getPosts(): Call<TestData>
+    fun getPostList(): Call<PostsData>
 
     @GET("posts")
-    suspend fun getPosts2(): Response<TestData>
+    suspend fun getPostList2(): Response<PostsData>
 
     @GET("posts")
-    fun getEachPost(
-        @Query("id") id: Int
-    ): Call<TestData>
+    fun getPost(
+        @Query("id") postId: Int
+    ): Call<PostsData>
 
     @GET("posts")
-    suspend fun getEachPost2(
-        @Query("id") id: Int
-    ): Response<TestData>
+    suspend fun getPost2(
+        @Query("id") postId: Int
+    ): Response<PostsData>
+
+    @GET("posts/{postId}")
+    fun getPost3(
+        @Path("postId") postId: Int
+    ): Call<PostData>
+
+    @GET("posts/{postId}")
+    suspend fun getPost4(
+        @Path("postId") postId: Int
+    ): Response<PostData>
 }
